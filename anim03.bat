@@ -8,7 +8,7 @@ REM 1. Create files needed in the loop
 echo gmt begin > pre.bat
     echo. gmt math -T0/355/5 -o1 T = angles.txt >> pre.bat
 	echo. gmt makecpt -Crelief -T-2000/2000/20 -H ^> iceland.cpt >> pre.bat
-	echo. gmt grdclip @earth_relief_04m -R-26/-12/63/67 -Sb0/-1 -Gabove.nc >> pre.bat
+	echo. gmt grdclip @earth_relief_02m -R-26/-12/63/67 -Sb0/-1 -Gabove.nc >> pre.bat
 echo gmt end >> pre.bat
 
 REM 2. Set up the main frame script
